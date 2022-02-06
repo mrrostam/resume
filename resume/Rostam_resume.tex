@@ -1,0 +1,211 @@
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,letterpaper,ragged2e,compact]{mocv}
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+% Change the page layout if you need to
+\usepackage{lipsum}
+
+\begin{document}
+\name{Reza}{Rostam}
+\subtitle{Software developer, machine learning researcher, control systems engineer}
+\linkedinlink{https://www.linkedin.com/in/mrrostam}
+\linkedintext{/mrrostam}
+\phonetext{+1-604-339-3827}
+\emaillink {mailto:reza.rostam@mech.ubc.ca}
+\emailtext {reza.rostam@mech.ubc.ca}
+\semaillink {mailto:pooya.rostam@gmail.com}
+\semailtext {pooya.rostam@gmail.com}
+\githublink {https://github.com/mrrostam}
+\githubtext {/mrrostam}
+\websitelink {https://mrrostam.github.io/}
+\websitetext {mrrostam.github.io}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+
+\begin{paracol}{2}
+    \cvsection{\faBookmark~Summary of Qualifications}
+    \begin{itemize}
+        \item Strong \textbf{programming skills} with several languages \\
+            (C, Modern C++, Python, MATLAB, Assembly, WASM)
+        \item Highly skilled \textbf{machine learning scientist} \\
+            with over 4 years of experience in academic and industry settings
+        \item Deep knowledge of \textbf{embedded systems and real-time OSes} \\
+        \item Strong knowledge of \textbf{sensors, actuators, and instrumentation}
+        \item Expert in designing and implementing various \textbf{controllers} \\
+            (adaptive, robust, nonlinear, optimal)
+        \item More than 10 years of \textbf{research experience} internationally
+            %\item \textbf{Permanent resident} of Canada
+    \end{itemize}
+    \cvsection{\faPieChart~Experiences}
+    \cvevent{Embedded Software Engineer}{Picovoice Inc.}{Oct 2020 -- Ongoing}{Vancouver}
+    \begin{itemize}
+        \item Optimized the NLP engine with SIMD instructions (SSE, AVX, Neon)
+        \item Ported the platform to different microcontrollers
+        \item Ported the platform to web using WASM/JS
+    \end{itemize}
+    \divider
+    \cvevent{Graduate Research Assistant}{Control Engineering Laboratory}{Sep 2016 -- Ongoing}{Vancouver}
+    \begin{itemize}
+        \item Managing research partnership with the industrial partner %\\(Ascent Systems Technologies)
+        \item Mentoring four undergraduate and two Master of Science students on various research projects
+        \item Conducting journal reviews for three scientific journals
+        \item Engaging students in extracurricular academic activities while being the VP Finance of the Mechanical Engineering Graduate Association 
+    \end{itemize}
+    \divider
+    \cvevent{Research And Development Engineer}{FanKavan Ara}{Dec 2015 -- Jul 2016}{Tehran}
+    \begin{itemize}
+        \item Developed PCBs as well as the software interface for data-loggers
+    \end{itemize}
+    \divider
+    \cvevent{Research And Development Engineer}{Aral research Co.}{Apr 2014 -- Sep 2014}{Tehran}
+    %    \begin{itemize}
+    %        \item Studied extensively and simulated the effect of various parameters on the performance of magnetic lenses
+    %    \end{itemize}
+    \divider
+    \cvevent{Project Leader}{UBC Centre for Community Engaged Learning}{Oct 2019 -- Mar 2020}{Vancouver}
+    \begin{itemize}
+        \item Led a group of 20 students, after taking a series of workshops, to enhance the quality of education for kids in BC
+    \end{itemize}
+    \cvsection{\faFlask~Projects}
+    \cvevent{Robust Economic Model Predictive Control with Application to Solar Thermal Systems}{Natural Sciences and Engineering Research Council}{2020}{Vancouver}
+    \begin{itemize}
+        \item Developing a new control system combining the model predictive control scheme with a machine learning technique called Gaussian process
+        \item The proposed system is able to deal with quasi-periodic unknown disturbances such as energy demand in renewable energy systems
+    \end{itemize}
+    \divider
+    \cvevent{Train Monitoring System}{FanKavan Ara}{2016}{Iran}
+    \begin{itemize}
+        \item Designed a portable data-logger for monitoring the ride comfort as well as the wheelset’s temperature
+            %\item The device is able to analyze the results online and notify the control center in case of an emergency.
+    \end{itemize}
+    \divider
+    \cvevent{GM Locomotive’s DC Traction Motor Condition Monitoring and Fault Diagnostics using Artificial Neural Network}{Iran Railways}{2015}{Tehran}
+    \begin{itemize}
+        \item Developed an intelligent monitoring system using vibration analysis based on the discrete wavelet transform and Learning Vector Quantization artificial neural network
+    \end{itemize}
+    \divider
+    \cvevent{Design and Fabrication of the Magnetic Electron Lens for a Transmission Electron Microscopy}{Ara research}{2014}{Tehran}
+    \begin{itemize}
+        \item  Built a magnetic electron lens, during a 3-month project, to be implemented inside a Transmission Electron Microscopy
+    \end{itemize}
+    \divider
+    \cvevent{Active Noise Control in Pardis Coach using Different Fuzzy Controllers}{Iran University of Science and Technology}{2012}{Tehran}
+    \begin{itemize}
+        \item Designed a fuzzy controller to suppress the noise inside the coach
+    \end{itemize}
+    \divider
+    \cvevent{Dynamic Analysis of MD523 Bogie with ADAMS/Rail}{Iran University of Science and Technology}{2012}{Tehran}
+    \begin{itemize}
+        \item Modeled and simulated an MD523 bogie in Adams/rails based on manufacturing documents
+            %\item A dynamic analysis of the bogie on four rail classes is carried out considering a passenger car as the wagon. 
+    \end{itemize}
+
+    \switchcolumn
+    \cvsection{\faCheckSquareO~Areas of Expertise}
+    \begin{itemize}
+        \item Machine Learning \& Time Series Analysis
+        \item Mechatronic/Control Systems
+        \item Embedded Systems
+        \item Digital Signal Processing
+        \item Optimization \& Applied Mathematics
+        \item Mechanical Vibrations \\ (Nonlinear \& Continuous)
+    \end{itemize}
+    \cvsection{\faGears~Computer Skills}
+    \cvtag{C-C++}:~\cvtag{GSL, Boost, Armadillo, CUDA} \\
+    \cvtag{cmake} \cvtag{CI/CD tools} \cvtag{git}\\
+    \cvtag{Python}:~\cvtag{Scikit, Keras, TensorFlow, PyTorch} \\
+    \cvtag{MATLAB \& Simulink} \cvtag{LabView} \\
+    \divider \\
+    \cvtag{Embeded Systems}:~\cvtag{Assembly \& C} \\ 
+    \cvtag{ARM family~(Cotex M/R/A)} \cvtag{FreeRTOS}\\
+    \cvtag{Embedded Linux}:~\cvtag{U-Boot} \cvtag{Yocto} \cvtag{QT}\\
+    % \divider \\
+    % \cvtag{PLC}: \cvtag{S7 Siemens} \\
+    \divider \\
+    \cvtag{Proteus} \cvtag{MultiSim} \cvtag{Altium} \cvtag{AMESIM} \\
+    \divider \\
+    \cvtag{Linux} \cvtag{Scripting} \cvtag{SQL} \\
+    \divider \\
+    \cvtag{ANSYS} \cvtag{COMSOL} \cvtag{SolidWorks} \\
+    \cvsection{\faGraduationCap~Education}
+    \cvevent{Ph.D.\ in \textsc{Control Systems}}{The University of British Columbia}{Sept 2016 -- Present}{}
+    Thesis: A Hybrid Gaussian Process Approach to Robust Economic Model Predictive Control
+
+    \divider
+
+    \cvevent{M.Sc.\ in Mechanical Engineering}{Sharif University of Technology}{Sept 2013 -- Feb 2016}{}
+    Thesis: Control of Adaptive Optics Systems Using Transverse Actuators
+
+    \divider
+
+    \cvevent{B.Sc.\ in Mechanical Engineering}{Iran University of Science and Technology}{Sept 2009 -- June 2013}{}
+    \newpage
+    \cvsection{\faFile~Certifications}
+    \begin{itemize}
+        \item Certified System Administrator (LFCS)  
+        \item Kubernetes Application Developer (CKAD) 
+        \item Essentials of Productive Teams (Mitacs)
+        \item Foundations of Project Management (Mitacs)
+        \item Design and Implementation of Smart Automation Systems (Shrif University)
+    \end{itemize}
+    \cvsection{\faChalkboardTeacher~Courses taught}
+    \begin{itemize}
+        \item Modeling of Mechatronic Systems
+        \item Mechatronics System Instrumentation
+        \item Automatic Control
+        \item Modelling of Dynamic Systems
+        \item Modern Control Engineering
+        \item Mechanical Vibration
+        \item MATLAB \& Simulink for Engineers
+    \end{itemize}
+    \cvsection{\faBook~Selected Courses}
+    \begin{itemize}
+        \item Advanced Machine Learning
+        \item Machine Learning and Data Mining
+        \item Introduction to Artificial Intelligence
+        \item Control Sensors and Actuators
+        \item Modelling of Dynamic Systems
+        \item Foundations in Control Engineering
+        \item Multi-variable Feedback and Robust Control
+        \item Self-Tuning and Adaptive Control
+        \item Optimal Control
+    \end{itemize}
+    \cvsection{\faAward~Honors \& Awards}
+    \cvachievement{\faTrophy}{Linux Foundation Training Scholarship}{to become Certified System Administrator \& Kubernetes Application Developer}
+    \divider \\
+    \cvachievement{\faTrophy}{Mitacs Research Training Award Proposal}{in recognition of the research achievement}
+    \divider \\
+    \cvachievement{\faTrophy}{Faculty of Applied Science Award}{in recognition of the research achievement}
+    \divider \\
+    \cvachievement{\faTrophy}{Best Presentation Award}{BC universities ``Systems\&Control'' meeting}
+    \divider \\
+    \cvachievement{\faTrophy}{Four Year Fellowships (FYF)}{in recognition of the academic achievement}
+    \divider \\
+    \cvachievement{\faTrophy}{Ranked 1\textsuperscript{st}}{amongst the B.Sc. alumni}
+
+    % \cvsection{\faAtlas~Referees}
+    % % \cvref{name}{email}{mailing address}
+    % \cvref{Prof.\ Ryozo Nagamune}{University of British Columbia}{nagamune@mech.ubc.ca}{}
+    %\divider
+    %\cvref{Prof.\ Davood Younesian}{Iran University of Science and Technology}{younesian@iust.ac.ir}{}
+\end{paracol}
+\end{document}
